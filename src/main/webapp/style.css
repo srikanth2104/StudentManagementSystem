@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* =========================
+   REAL BUTTON-STYLE LINKS
+   ========================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    margin: 10px 5px;
+    background-color: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                transform 0.1s ease,
+                box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0b5ed7;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0d6efd;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #198754;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #157347;
+}
+
+
+/* =========================
+   STUDENT TABLE
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f8f9fa;
+}
+
+tr:hover td {
+    background-color: #e9f2ff;
+}
+
+
+/* =========================
+   TABLE ACTION BUTTONS
+   ========================= */
+
+.action {
+    display: inline-block;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.action:hover,
+.action:visited,
+.action:active {
+    text-decoration: none;
+}
+
+.action.edit {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.action.edit:hover {
+    background-color: #e0a800;
+    color: #212529;
+}
+
+.action.update {
+    background-color: #198754;
+    color: white;
+}
+
+.action.update:hover {
+    background-color: #157347;
+    color: white;
+}
+
+.action.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.action.delete:hover {
+    background-color: #bb2d3b;
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE TABLE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    .action {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+}
